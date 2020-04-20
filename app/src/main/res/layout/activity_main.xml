@@ -26,12 +26,10 @@
             android:textSize="25dp"
             android:visibility="visible" />
 
-        <EditText
-            android:id="@+id/edtMarca"
+        <TextView
+            android:id="@+id/txtMarca"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
             android:textAlignment="center"
             android:textSize="20dp" />
 
@@ -44,12 +42,10 @@
             android:textAlignment="center"
             android:textSize="25dp" />
 
-        <EditText
-            android:id="@+id/edtModel"
+        <TextView
+            android:id="@+id/txtModel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
             android:textAlignment="center"
             android:textSize="20dp" />
 
@@ -62,12 +58,10 @@
             android:textAlignment="center"
             android:textSize="25dp" />
 
-        <EditText
-            android:id="@+id/edtAn"
+        <TextView
+            android:id="@+id/txtAn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
             android:textAlignment="center"
             android:textSize="20dp" />
 
@@ -80,12 +74,10 @@
             android:textAlignment="center"
             android:textSize="25dp" />
 
-        <EditText
-            android:id="@+id/edtMotorizare"
+        <TextView
+            android:id="@+id/txtMotorizare"
             android:layout_width="match_parent"
-            android:layout_height="61dp"
-            android:ems="10"
-            android:inputType="textPersonName"
+            android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="20dp" />
 
