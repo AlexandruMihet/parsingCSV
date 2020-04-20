@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
         String line = "";
         try {
-             //headers (titluri)
+            //headers (titluri)
             //Step over headers
-                reader.readLine();
+            reader.readLine();
             while ((line = reader.readLine()) != null) {
                 Log.d("MyActivity", "Line" +line);
                 //Split by ','

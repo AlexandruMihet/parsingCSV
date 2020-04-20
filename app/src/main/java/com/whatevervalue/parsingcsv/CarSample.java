@@ -1,6 +1,7 @@
 package com.whatevervalue.parsingcsv;
 
 class CarSample {
+
     public String getMarca() {
         return marca;
     }
