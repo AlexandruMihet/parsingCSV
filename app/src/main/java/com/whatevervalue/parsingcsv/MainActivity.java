@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         //EXEMPLU, preia date de la prima masina din lista si le afiseaza in GUI
         carInfo("car1");
 
+
     }
 
     //metoda care primeste id-ul masinii si afiseaza info despre acea masina
