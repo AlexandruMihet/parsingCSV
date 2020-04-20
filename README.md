@@ -1,2 +1,2 @@
 # parsingCSV
-Alexandru Mihet Proiect de Licenta
+Alexandru Mihet - Proiect de Licenta
