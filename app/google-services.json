@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "698964933597",
+    "firebase_url": "https://parsingcsv-4c993.firebaseio.com",
+    "project_id": "parsingcsv-4c993",
+    "storage_bucket": "parsingcsv-4c993.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698964933597:android:816371eab57c70d0639434",
+        "android_client_info": {
+          "package_name": "com.whatevervalue.parsingcsv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698964933597-au2pgmfp66ceadsiiich92en7jbju4io.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.whatevervalue.parsingcsv",
+            "certificate_hash": "3f4d1b4b57f33ef12d063221e6860bee6ead4e63"
+          }
+        },
+        {
+          "client_id": "698964933597-4nt7du4ueff2o6b4lf27v6r1fqas66ni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqq5ZQkmb-zzCEH6_5YjqkbTepvXdrmmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698964933597-4nt7du4ueff2o6b4lf27v6r1fqas66ni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
