@@ -1,6 +1,6 @@
 package com.whatevervalue.parsingcsv;
 
-class Car {
+ public class Car {
 
     //obiect de tip CarSample cu 7 atribute (cele din cars_info.csv)
     //CAR_ID,MARK,MODEL,CAR_YEAR,ENGINE_POWER,AUTOMATIC,FUEL_TYPE

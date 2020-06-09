@@ -31,11 +31,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_main);
-        setContentView(R.layout.login_activity);
+        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.login_activity);
         //conectare la Firebase
         // Toast.makeText(MainActivity.this, "Firebase connection success", Toast.LENGTH_LONG).show();
-      /*  Toast.makeText(MainActivity.this, "Firebase connection success", Toast.LENGTH_LONG).show();
+       Toast.makeText(MainActivity.this, "Firebase connection success", Toast.LENGTH_LONG).show();
         InputStream is = getResources().openRawResource(R.raw.cars_info);
         ReadCars rc = new ReadCars(is);
         listaMasini = rc.readCarInfo();
@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-*/
-    }
-}
+
+
+
 
 

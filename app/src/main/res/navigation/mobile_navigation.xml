@@ -5,6 +5,7 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/nav_home">
 
+
     <fragment
         android:id="@+id/nav_home"
         android:name="com.whatevervalue.parsingcsv.ui.home.HomeFragment"
@@ -50,4 +51,6 @@
         android:name="com.whatevervalue.parsingcsv.ui.error_data_list.Error_data_listFragment"
         android:label="ErrorDataList"
         tools:layout="@layout/fragment_error_data_list" />
+
+
 </navigation>
