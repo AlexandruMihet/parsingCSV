@@ -13,6 +13,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.whatevervalue.parsingcsv.R;
+import com.whatevervalue.parsingcsv.ui.home.HomeFragment;
 
 
 public class Error_data_listFragment extends Fragment {
@@ -31,6 +32,9 @@ public class Error_data_listFragment extends Fragment {
                 textView.setText(s);
             }
         });*/
+
+        TextView id = (TextView) root.findViewById(R.id.txtID);
+        id.setText(HomeFragment.userInput);
         return root;
     }
 }
