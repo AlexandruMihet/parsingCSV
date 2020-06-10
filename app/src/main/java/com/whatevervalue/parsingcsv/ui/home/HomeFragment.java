@@ -1,6 +1,7 @@
 package com.whatevervalue.parsingcsv.ui.home;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,9 @@ import com.whatevervalue.parsingcsv.R;
 public class HomeFragment extends Fragment implements
         AdapterView.OnItemSelectedListener {
 
+
+    public static String userInput;
+
     private HomeViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -37,19 +41,26 @@ public class HomeFragment extends Fragment implements
             }
         });*/
 
-         Spinner spinner = (Spinner) root.findViewById(R.id.spinnerID);
+        Spinner spinner = (Spinner) root.findViewById(R.id.spinnerID);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.carsID, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
+
         return root;
 
     }
+
+
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String text = parent.getItemAtPosition(position).toString();
         Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+
+        //Log.d("MyActivity", "FUNCTIONEAZA" + text);
+        userInput = text;
+
     }
 
     @Override

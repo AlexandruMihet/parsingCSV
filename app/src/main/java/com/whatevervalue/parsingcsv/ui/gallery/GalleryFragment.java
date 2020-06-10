@@ -17,6 +17,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.whatevervalue.parsingcsv.Car;
 import com.whatevervalue.parsingcsv.R;
 import com.whatevervalue.parsingcsv.ReadCars;
+import com.whatevervalue.parsingcsv.ui.home.HomeFragment;
 
 import org.w3c.dom.Text;
 
@@ -25,6 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GalleryFragment extends Fragment{
+
 
     private GalleryViewModel galleryViewModel;
     private List<Car> listaMasini = new ArrayList<>();
@@ -65,7 +67,7 @@ public class GalleryFragment extends Fragment{
             Log.d("MyActivity", "Just created:" + c);
 
         //EXEMPLU, preia date de la prima masina din lista si le afiseaza in GUI
-        carInfo("car1", root);
+        carInfo(HomeFragment.userInput, root);
 
 
         //metoda care primeste id-ul masinii si afiseaza info despre acea masina
