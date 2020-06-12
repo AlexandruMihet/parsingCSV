@@ -43,7 +43,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Errors"
-                            android:textColor="#fff"
+                            android:textColor="@color/design_default_color_error"
                             android:textSize="20dp" />
 
                         <TextView
@@ -75,7 +75,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textAlignment="center"
-                            android:textColor="@color/design_default_color_error"
+                            android:textColor="#fff"
                             android:textSize="25dp" />
 
                         <TextView
@@ -93,7 +93,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textAlignment="center"
-                            android:textColor="@color/design_default_color_error"
+                            android:textColor="#fff"
                             android:textSize="25dp" />
 
                         <TextView
@@ -103,12 +103,12 @@
 
                         <TextView
                             android:id="@+id/txtError4"
+                            style="?android:listSeparatorTextViewStyle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textAlignment="center"
-                            android:textColor="@color/design_default_color_error"
-                            android:textSize="25dp"
-                            style="?android:listSeparatorTextViewStyle"/>
+                            android:textColor="#fff"
+                            android:textSize="25dp" />
 
                         <TextView
                             android:id="@+id/textView36"
@@ -117,12 +117,12 @@
 
                         <TextView
                             android:id="@+id/txtError5"
+                            style="?android:listSeparatorTextViewStyle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textAlignment="center"
-                            android:textColor="@color/design_default_color_error"
-                            android:textSize="25dp"
-                            style="?android:listSeparatorTextViewStyle"/>
+                            android:textColor="#fff"
+                            android:textSize="25dp" />
                     </LinearLayout>
                 </ScrollView>
             </LinearLayout>
