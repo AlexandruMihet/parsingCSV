@@ -29,6 +29,102 @@
                 app:layout_constraintTop_toTopOf="parent">
 
 
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Errors"
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView30"
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp" />
+
+                        <TextView
+                            android:id="@+id/txtError1"
+                            style="?android:listSeparatorTextViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            style="?android:listSeparatorTextViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/design_default_color_error"
+                            android:textSize="5dp" />
+
+                        <TextView
+                            android:id="@+id/txtError2"
+                            style="?android:listSeparatorTextViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/design_default_color_error"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            style="?android:listSeparatorTextViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/design_default_color_error"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/txtError3"
+                            style="?android:listSeparatorTextViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/design_default_color_error"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/textView32"
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp" />
+
+                        <TextView
+                            android:id="@+id/txtError4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/design_default_color_error"
+                            android:textSize="25dp"
+                            style="?android:listSeparatorTextViewStyle"/>
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp" />
+
+                        <TextView
+                            android:id="@+id/txtError5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/design_default_color_error"
+                            android:textSize="25dp"
+                            style="?android:listSeparatorTextViewStyle"/>
+                    </LinearLayout>
+                </ScrollView>
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -51,7 +147,6 @@
                 android:layout_weight="1"
                 android:text="Vehicle id: "
                 android:textAlignment="center"
-                android:textColor="#fff"
                 android:textSize="20dp" />
 
             <TextView
@@ -60,7 +155,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="TextView"
-                android:textColor="#fff"
                 android:textSize="20dp" />
 
             <TextView

@@ -103,8 +103,8 @@
 
             <Spinner
                 android:id="@+id/spinnerID"
-                android:layout_width="368dp"
-                android:layout_height="35dp"
+                android:layout_width="381dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="#fff" />
         </LinearLayout>

@@ -129,16 +129,15 @@
         app:layout_constraintVertical_bias="0.895"
         >
 
-        <TextView
-            android:id="@+id/btnLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="350dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/rounded_btn_login"
             android:text="Register"
-            android:textAlignment="center"
             android:textColor="#fff"
             android:textSize="20dp"
-            android:typeface="monospace"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

@@ -1,6 +1,7 @@
 package com.whatevervalue.parsingcsv.ui.error_data_list;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,13 +13,28 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.whatevervalue.parsingcsv.Car;
+import com.whatevervalue.parsingcsv.Errors;
 import com.whatevervalue.parsingcsv.R;
+import com.whatevervalue.parsingcsv.ReadCars;
+import com.whatevervalue.parsingcsv.ReadErrors;
 import com.whatevervalue.parsingcsv.ui.home.HomeFragment;
+
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Error_data_listFragment extends Fragment {
 
     private Error_data_listViewModel error_data_listViewModel;
+    private List<Errors> listaErrors = new ArrayList<>();
+    private TextView id;
+    private TextView error1;
+    private TextView error2;
+    private TextView error3;
+    private TextView error4;
+    private TextView error5;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -33,8 +49,44 @@ public class Error_data_listFragment extends Fragment {
             }
         });*/
 
-        TextView id = (TextView) root.findViewById(R.id.txtID);
-        id.setText(HomeFragment.userInput);
+        InputStream is = getResources().openRawResource(R.raw.error_data);
+        ReadErrors re = new ReadErrors(is);
+        listaErrors = re.readErrorInfo();
+
+        //Log message debug
+        for (Errors e : listaErrors)
+            Log.d("MyActivity", "Just created:" + e);
+
+        //EXEMPLU, preia date de la prima masina din lista si le afiseaza in GUI
+        ErrorsData(HomeFragment.userInput, root);
+
+
+        //metoda care primeste id-ul masinii si afiseaza info despre acea masina
+
+
+
         return root;
+
+
+    }
+
+    public void ErrorsData(String car, View root) {
+        for (Errors e : listaErrors)
+            if (e.getCarID().equals(car)) {
+                TextView id = (TextView) root.findViewById(R.id.txtID);
+                TextView error1 = (TextView) root.findViewById(R.id.txtError1);
+                TextView error2 = (TextView) root.findViewById(R.id.txtError2);
+                TextView error3= (TextView) root.findViewById(R.id.txtError3);
+                TextView error4 = (TextView) root.findViewById(R.id.txtError4);
+                TextView error5 = (TextView) root.findViewById(R.id.txtError5);
+
+                id.setText(e.getCarID());
+                error1.setText(e.getError1());
+                error2.setText(e.getError2());
+                error3.setText(e.getError3());
+                error4.setText(e.getError4());
+                error5.setText(e.getError5());
+
+            }
     }
 }

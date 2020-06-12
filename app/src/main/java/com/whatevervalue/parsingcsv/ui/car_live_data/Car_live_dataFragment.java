@@ -89,12 +89,16 @@ public class Car_live_dataFragment extends Fragment {
             Log.d("MyActivity", "Just created:" + lv);
 
         //EXEMPLU, preia date de la prima masina din lista si le afiseaza in GUI
-        liveDataInfo(HomeFragment.userInput, root);
+        try {
+            liveDataInfo(HomeFragment.userInput, root);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         return root;
     }
 
-    public void liveDataInfo(String car, View root) {
+    public void liveDataInfo(String car, View root) throws InterruptedException {
         for (LiveData l : listaCarLiveData){
             TextView id = (TextView) root.findViewById(R.id.txtID);
             TextView barometric_pressure = (TextView) root.findViewById(R.id.txtBarometric);
@@ -155,6 +159,8 @@ public class Car_live_dataFragment extends Fragment {
             month.setText(mo);
             String y = String.valueOf(l.getYear());
             year.setText(y);
+
+            //Thread.sleep(1000);
 
             /*id.setText(c.getCarID());
             marca.setText(c.getMarca());
