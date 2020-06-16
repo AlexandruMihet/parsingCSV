@@ -51,6 +51,12 @@
         android:name="com.whatevervalue.parsingcsv.ui.error_data_list.Error_data_listFragment"
         android:label="ErrorDataList"
         tools:layout="@layout/fragment_error_data_list" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.whatevervalue.parsingcsv.LoginActivity"
+        android:label="Logout"
+        tools:layout="@layout/login_activity"
+        />
 
 
 </navigation>
