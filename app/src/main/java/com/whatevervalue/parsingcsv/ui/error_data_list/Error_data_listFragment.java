@@ -1,10 +1,14 @@
 package com.whatevervalue.parsingcsv.ui.error_data_list;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -29,6 +33,7 @@ public class Error_data_listFragment extends Fragment {
 
     private Error_data_listViewModel error_data_listViewModel;
     private List<Errors> listaErrors = new ArrayList<>();
+    private ScrollView scrollView;
     private TextView id;
     private TextView error1;
     private TextView error2;
@@ -53,14 +58,39 @@ public class Error_data_listFragment extends Fragment {
         ReadErrors re = new ReadErrors(is);
         listaErrors = re.readErrorInfo();
 
+        error1 = root.findViewById(R.id.txtError1);
+        error2 = root.findViewById(R.id.txtError2);
+        error3 = root.findViewById(R.id.txtError3);
+        error4 = root.findViewById(R.id.txtError4);
+        error5 = root.findViewById(R.id.txtError5);
+        scrollView = root.findViewById(R.id.scrollView);
+
         //Log message debug
         for (Errors e : listaErrors)
             Log.d("MyActivity", "Just created:" + e);
 
         //EXEMPLU, preia date de la prima masina din lista si le afiseaza in GUI
-        ErrorsData(HomeFragment.userInput, root);
+        ErrorsData(HomeFragment.getUserInput(), root);
+
+        error1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                new AlertDialog.Builder(getActivity())
+                        .setIcon(android.R.drawable.ic_delete)
+                        .setTitle("Are you sure ?")
+                        .setMessage("Do you want to delete this error?")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                   v.setVisibility(View.GONE);
+                            }
+                        })
+                        .setNegativeButton("No", null)
+                        .show();
 
 
+            }
+        });
         //metoda care primeste id-ul masinii si afiseaza info despre acea masina
 
 
@@ -89,4 +119,5 @@ public class Error_data_listFragment extends Fragment {
 
             }
     }
+
 }

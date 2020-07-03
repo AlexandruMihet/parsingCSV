@@ -38,6 +38,7 @@ public class ReadCars {
                 temp.setMotorizare(linie[4]);
                 temp.setAutomatic(linie[5]);
                 temp.setFuel(linie[6]);
+                temp.setKm(Integer.parseInt(linie[7]));
 
                 lista.add(temp);
             }

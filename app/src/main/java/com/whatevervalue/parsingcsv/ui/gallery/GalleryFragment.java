@@ -67,7 +67,7 @@ public class GalleryFragment extends Fragment{
             Log.d("MyActivity", "Just created:" + c);
 
         //EXEMPLU, preia date de la prima masina din lista si le afiseaza in GUI
-        carInfo(HomeFragment.userInput, root);
+        carInfo(HomeFragment.getUserInput(), root);
 
 
         //metoda care primeste id-ul masinii si afiseaza info despre acea masina
@@ -89,6 +89,7 @@ public class GalleryFragment extends Fragment{
                 TextView motorizare = (TextView) root.findViewById(R.id.txtPutere);
                 TextView automatic = (TextView) root.findViewById(R.id.txtSchimbator);
                 TextView fuel = (TextView) root.findViewById(R.id.txtMotorizare);
+                TextView km = (TextView) root.findViewById(R.id.txtKm);
                 id.setText(c.getCarID());
                 marca.setText(c.getMarca());
                 model.setText(c.getModel());
@@ -97,6 +98,8 @@ public class GalleryFragment extends Fragment{
                 motorizare.setText(c.getMotorizare());
                 automatic.setText(c.getAutomatic());
                 fuel.setText(c.getFuel());
+                String k = String.valueOf(c.getKm());
+                km.setText(k);
 
             }
     }

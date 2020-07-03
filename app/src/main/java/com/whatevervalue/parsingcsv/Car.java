@@ -11,6 +11,7 @@ package com.whatevervalue.parsingcsv;
     private String motorizare;
     private String automatic;
     private String fuel;
+    private int km;
 
     public String getMarca() {
         return marca;
@@ -68,6 +69,14 @@ package com.whatevervalue.parsingcsv;
         this.fuel = fuel;
     }
 
+     public int getKm() {
+         return km;
+     }
+
+     public void setKm(int km) {
+         this.km = km;
+     }
+
     @Override
     public String toString() {
         return "Car{" +
@@ -78,6 +87,7 @@ package com.whatevervalue.parsingcsv;
                 ", motorizare='" + motorizare + '\'' +
                 ", automatic='" + automatic + '\'' +
                 ", fuel='" + fuel + '\'' +
+                ", km='" + km + '\'' +
                 '}';
     }
 }

@@ -13,6 +13,7 @@ public class ReadLiveData {
     public ReadLiveData(InputStream is){this.is=is; }
     public List<LiveData> readCarLiveData() {
 
+    int count = 0;
 
         List<LiveData> lista = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));

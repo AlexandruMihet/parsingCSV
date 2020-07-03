@@ -17,6 +17,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.whatevervalue.parsingcsv.Car;
 import com.whatevervalue.parsingcsv.LiveData;
+import com.whatevervalue.parsingcsv.Meniu;
 import com.whatevervalue.parsingcsv.R;
 import com.whatevervalue.parsingcsv.ReadCars;
 import com.whatevervalue.parsingcsv.ReadLiveData;
@@ -29,6 +30,8 @@ import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Car_live_dataFragment extends Fragment {
 
@@ -65,7 +68,8 @@ public class Car_live_dataFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         car_live_dataViewModel =
                 ViewModelProviders.of(this).get(Car_live_dataViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_car_live_data, container, false);
+        final View root = inflater.inflate(R.layout.fragment_car_live_data, container, false);
+        //TextView id = (TextView) root.findViewById(R.id.txtID);
         /*final TextView textView = root.findViewById(R.id.textCarLiveData);
         car_live_dataViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
@@ -74,32 +78,54 @@ public class Car_live_dataFragment extends Fragment {
             }
         });*/
 
+            switch(HomeFragment.getUserInput()) {
+                case "carID1":
+                    InputStream is = getResources().openRawResource(R.raw.car1_data);
+                    ReadLiveData rld = new ReadLiveData(is);
+                    listaCarLiveData = rld.readCarLiveData();
+                    break;
 
+                case "carID2":
+                    InputStream is1 = getResources().openRawResource(R.raw.car6_data);
+                    ReadLiveData rld1 = new ReadLiveData(is1);
+                    listaCarLiveData = rld1.readCarLiveData();
+                    break;
 
+                default:
+                    break;
+            }
 
-
-            InputStream is = getResources().openRawResource(R.raw.car1_data);
+            /*InputStream is = getResources().openRawResource(R.raw.car1_data);
             ReadLiveData rld = new ReadLiveData(is);
-            listaCarLiveData = rld.readCarLiveData();
+            listaCarLiveData = rld.readCarLiveData();*/
+
+            //Thread.sleep(1000);
 
 
 
 
         for (LiveData lv : listaCarLiveData)
-            Log.d("MyActivity", "Just created:" + lv);
+            Log.d("MyActivity" , "Just created:" + lv);
 
         //EXEMPLU, preia date de la prima masina din lista si le afiseaza in GUI
         try {
-            liveDataInfo(HomeFragment.userInput, root);
+            liveDataInfo(HomeFragment.getUserInput(), root);
+            ((Meniu)getActivity()).displayOneSecond();
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
+
+
+
         return root;
     }
 
+
     public void liveDataInfo(String car, View root) throws InterruptedException {
         for (LiveData l : listaCarLiveData){
+
             TextView id = (TextView) root.findViewById(R.id.txtID);
             TextView barometric_pressure = (TextView) root.findViewById(R.id.txtBarometric);
             TextView engine_coolant = (TextView) root.findViewById(R.id.txtEngineCoolant);
@@ -124,7 +150,9 @@ public class Car_live_dataFragment extends Fragment {
             TextView month = (TextView) root.findViewById(R.id.txtMonth);
             TextView year = (TextView) root.findViewById(R.id.txtYear);
 
-            id.setText(HomeFragment.userInput);
+
+
+            id.setText(HomeFragment.getUserInput());
 
             String b = String.valueOf(l.getBarometric_pressure());
             barometric_pressure.setText(b);
@@ -160,7 +188,7 @@ public class Car_live_dataFragment extends Fragment {
             String y = String.valueOf(l.getYear());
             year.setText(y);
 
-            //Thread.sleep(1000);
+
 
             /*id.setText(c.getCarID());
             marca.setText(c.getMarca());
