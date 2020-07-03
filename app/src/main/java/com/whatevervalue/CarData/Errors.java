@@ -1,4 +1,4 @@
-package com.whatevervalue.parsingcsv;
+package com.whatevervalue.CarData;
 
 public class Errors {
     private String carID;

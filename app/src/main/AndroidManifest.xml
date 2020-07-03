@@ -12,12 +12,12 @@
         android:theme="@style/AppTheme.NoActionBar">
       <!--  android:label="@string/title_activity_meniu" -->
         <activity
-            android:name=".Meniu"
+            android:name="com.whatevervalue.CarData.Meniu"
 
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
-        <activity android:name=".RegisterActivity">
+        <activity android:name="com.whatevervalue.CarData.RegisterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,7 +26,7 @@
 
         </activity>
 
-        <activity android:name=".LoginActivity">
+        <activity android:name="com.whatevervalue.CarData.LoginActivity">
 
 
             <!--
@@ -38,7 +38,7 @@
             -->
         </activity> <!-- android:theme="@style/AppTheme.NoActionBar" -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.whatevervalue.CarData.MainActivity"
             android:label="ADS"
             android:theme="@style/AppTheme.NoActionBar">
 

@@ -6,12 +6,12 @@
 
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/ic_menu_camera"
+        android:icon="@drawable/homeoption"
         android:title="@string/menu_home" />
 
     <item
         android:id="@+id/loginActivity"
-        android:icon="@drawable/ic_menu_camera"
+        android:icon="@drawable/logout"
         android:title="Logout" />
 
 
@@ -21,19 +21,19 @@
 
                 <item
                     android:id="@+id/nav_gallery"
-                    android:icon="@drawable/ic_menu_gallery"
-                    android:title="@string/menu_gallery" />
+                    android:icon="@drawable/carinfo"
+                    android:title="CarInfo" />
                <!-- <item
                     android:id="@+id/nav_slideshow"
                     android:icon="@drawable/ic_menu_slideshow"
                     android:title="@string/menu_slideshow" /> -->
                 <item
                     android:id="@+id/car_live_data"
-                    android:icon="@drawable/ic_menu_slideshow"
+                    android:icon="@drawable/cardataphoto"
                     android:title="CarLiveData"/>
                 <item
                     android:id="@+id/error_data_list"
-                    android:icon="@drawable/ic_menu_slideshow"
+                    android:icon="@drawable/error"
                     android:title="ErrorDataList" />
 
             </menu>

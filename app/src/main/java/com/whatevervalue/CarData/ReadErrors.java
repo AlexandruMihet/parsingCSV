@@ -1,4 +1,4 @@
-package com.whatevervalue.parsingcsv;
+package com.whatevervalue.CarData;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

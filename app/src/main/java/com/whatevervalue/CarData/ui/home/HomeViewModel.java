@@ -1,17 +1,16 @@
-package com.whatevervalue.parsingcsv.ui.error_data_list;
-
+package com.whatevervalue.CarData.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class Error_data_listViewModel extends ViewModel {
+public class HomeViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public Error_data_listViewModel() {
+    public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is Error_live_data fragment");
+        mText.setValue("This is home fragment");
     }
 
     public LiveData<String> getText() {

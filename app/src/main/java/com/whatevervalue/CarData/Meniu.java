@@ -1,17 +1,13 @@
-package com.whatevervalue.parsingcsv;
+package com.whatevervalue.CarData;
 
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
 import android.widget.Toast;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
-import com.whatevervalue.parsingcsv.ui.car_live_data.Car_live_dataFragment;
-import com.whatevervalue.parsingcsv.ui.home.HomeFragment;
+import com.whatevervalue.parsingcsv.R;
 
-import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -81,7 +77,7 @@ public class Meniu extends AppCompatActivity {
                             @Override
                             public void run() {
                                 // update TextView here!
-                                Toast.makeText(Meniu.this, "Afisare o secunda", Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(Meniu.this, "Afisare o secunda", Toast.LENGTH_SHORT).show();
                             }
                         });
                     }
@@ -94,6 +90,6 @@ public class Meniu extends AppCompatActivity {
     }
 
     public void buttonAcess(View view){
-        
+
     }
 }

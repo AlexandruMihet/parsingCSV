@@ -1,4 +1,4 @@
-package com.whatevervalue.parsingcsv.ui.slideshow;
+package com.whatevervalue.CarData.ui.slideshow;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

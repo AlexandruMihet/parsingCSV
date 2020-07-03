@@ -1,3 +1,3 @@
 CarID,Error1,Error2,Error3,Error4,Error5
 carID1,Engine temperature,Battery charge,Oil pressure,Check engine,Automatic gearbox
-carID2,Oil pressure,Battery charge,a,a,a
+carID2,Oil pressure,Battery charge,wheel pressure,Check engine,MAF

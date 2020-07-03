@@ -1,4 +1,4 @@
-package com.whatevervalue.parsingcsv.ui.car_live_data;
+package com.whatevervalue.CarData.ui.car_live_data;
 
 
 
@@ -10,28 +10,18 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.whatevervalue.parsingcsv.Car;
-import com.whatevervalue.parsingcsv.LiveData;
-import com.whatevervalue.parsingcsv.Meniu;
+import com.whatevervalue.CarData.LiveData;
+import com.whatevervalue.CarData.Meniu;
 import com.whatevervalue.parsingcsv.R;
-import com.whatevervalue.parsingcsv.ReadCars;
-import com.whatevervalue.parsingcsv.ReadLiveData;
-import com.whatevervalue.parsingcsv.ui.car_live_data.Car_live_dataViewModel;
-import com.whatevervalue.parsingcsv.ui.home.HomeFragment;
+import com.whatevervalue.CarData.ReadLiveData;
+import com.whatevervalue.CarData.ui.home.HomeFragment;
 
-import org.w3c.dom.Text;
-
-import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class Car_live_dataFragment extends Fragment {
 

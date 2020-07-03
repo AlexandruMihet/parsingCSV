@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.whatevervalue.parsingcsv.ui.home.HomeFragment"
+        android:name="com.whatevervalue.CarData.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home">
 
@@ -32,28 +32,28 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.whatevervalue.parsingcsv.ui.gallery.GalleryFragment"
+        android:name="com.whatevervalue.CarData.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.whatevervalue.parsingcsv.ui.slideshow.SlideshowFragment"
+        android:name="com.whatevervalue.CarData.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/car_live_data"
-        android:name="com.whatevervalue.parsingcsv.ui.car_live_data.Car_live_dataFragment"
+        android:name="com.whatevervalue.CarData.ui.car_live_data.Car_live_dataFragment"
         android:label="CarLiveData"
         tools:layout="@layout/fragment_car_live_data" />
     <fragment
         android:id="@+id/error_data_list"
-        android:name="com.whatevervalue.parsingcsv.ui.error_data_list.Error_data_listFragment"
+        android:name="com.whatevervalue.CarData.ui.error_data_list.Error_data_listFragment"
         android:label="ErrorDataList"
         tools:layout="@layout/fragment_error_data_list" />
     <activity
         android:id="@+id/loginActivity"
-        android:name="com.whatevervalue.parsingcsv.LoginActivity"
+        android:name="com.whatevervalue.CarData.LoginActivity"
         android:label="Logout"
         tools:layout="@layout/login_activity"
         />

@@ -1,4 +1,4 @@
-package com.whatevervalue.parsingcsv;
+package com.whatevervalue.CarData;
 
 public class LiveData {
     private int barometric_pressure;

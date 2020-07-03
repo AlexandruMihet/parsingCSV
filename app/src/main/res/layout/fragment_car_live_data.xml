@@ -5,7 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background"
-        tools:context=".ui.car_live_data.Car_live_dataFragment">
+        tools:context="com.whatevervalue.CarData.ui.car_live_data.Car_live_dataFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"

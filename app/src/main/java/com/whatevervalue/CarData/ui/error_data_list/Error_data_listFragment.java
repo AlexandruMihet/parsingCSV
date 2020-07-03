@@ -1,4 +1,4 @@
-package com.whatevervalue.parsingcsv.ui.error_data_list;
+package com.whatevervalue.CarData.ui.error_data_list;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -7,22 +7,17 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.whatevervalue.parsingcsv.Car;
-import com.whatevervalue.parsingcsv.Errors;
+import com.whatevervalue.CarData.Errors;
 import com.whatevervalue.parsingcsv.R;
-import com.whatevervalue.parsingcsv.ReadCars;
-import com.whatevervalue.parsingcsv.ReadErrors;
-import com.whatevervalue.parsingcsv.ui.home.HomeFragment;
+import com.whatevervalue.CarData.ReadErrors;
+import com.whatevervalue.CarData.ui.home.HomeFragment;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -83,6 +78,86 @@ public class Error_data_listFragment extends Fragment {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                    v.setVisibility(View.GONE);
+                            }
+                        })
+                        .setNegativeButton("No", null)
+                        .show();
+
+
+            }
+        });
+
+        error2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                new AlertDialog.Builder(getActivity())
+                        .setIcon(android.R.drawable.ic_delete)
+                        .setTitle("Are you sure ?")
+                        .setMessage("Do you want to delete this error?")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                v.setVisibility(View.GONE);
+                            }
+                        })
+                        .setNegativeButton("No", null)
+                        .show();
+
+
+            }
+        });
+
+        error3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                new AlertDialog.Builder(getActivity())
+                        .setIcon(android.R.drawable.ic_delete)
+                        .setTitle("Are you sure ?")
+                        .setMessage("Do you want to delete this error?")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                v.setVisibility(View.GONE);
+                            }
+                        })
+                        .setNegativeButton("No", null)
+                        .show();
+
+
+            }
+        });
+
+        error4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                new AlertDialog.Builder(getActivity())
+                        .setIcon(android.R.drawable.ic_delete)
+                        .setTitle("Are you sure ?")
+                        .setMessage("Do you want to delete this error?")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                v.setVisibility(View.GONE);
+                            }
+                        })
+                        .setNegativeButton("No", null)
+                        .show();
+
+
+            }
+        });
+
+        error5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                new AlertDialog.Builder(getActivity())
+                        .setIcon(android.R.drawable.ic_delete)
+                        .setTitle("Are you sure ?")
+                        .setMessage("Do you want to delete this error?")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                v.setVisibility(View.GONE);
                             }
                         })
                         .setNegativeButton("No", null)
